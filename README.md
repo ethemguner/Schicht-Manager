@@ -14,3 +14,5 @@ xlsxwriter.
 
 There is an executed file in /dist directory which is running flawless. Be sure you've database.db and database2.db files in same directory with executed file.
 
+# Version 2.2
+Last update 13/05/2019
