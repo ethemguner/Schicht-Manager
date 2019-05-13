@@ -11,6 +11,8 @@ import datetime
 import xlsxwriter
 import os
 
+# Author: Ethem Güner
+# E-mail: ethemguener@gmail.com
 
 class Window(QtWidgets.QWidget):
     def __init__(self):
