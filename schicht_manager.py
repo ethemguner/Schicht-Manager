@@ -3,7 +3,6 @@ import sys
 import matplotlib.pyplot as plt
 import numpy as np
 import sqlite3
-import pylab
 from statistics import mean
 from statistics import StatisticsError
 from PyQt5.QtWidgets import QMessageBox
