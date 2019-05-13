@@ -60,8 +60,8 @@ class Window(QtWidgets.QWidget):
         self.about.setStyleSheet("QLabel             {color: white; font: italic;}")
         self.lastvalue.setStyleSheet("QLabel         {color: #48F408; background: #3A3A3A;}")
 
-        self.drei_rb.setStyleSheet("QRadioButton    {color: #00AAFF;}")
-        self.ein_rb.setStyleSheet("QRadioButton     {color: #00AAFF;}")
+        self.drei_rb.setStyleSheet("QRadioButton    {color: #FFD700;}")
+        self.ein_rb.setStyleSheet("QRadioButton     {color: #FFD700;}")
         self.shift_label.setStyleSheet("QLabel      {color: #DDDCDC;}")
         self.info.setStyleSheet("QLabel             {color: #DDDCDC;}")
         self.value_label.setStyleSheet("QLabel      {color: #DDDCDC;}")
