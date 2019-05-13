@@ -287,7 +287,7 @@ class Window(QtWidgets.QWidget):
         self.months_lb   = QtWidgets.QLabel("Wählen Sie einen Monat aus:")
         self.logo        = QtWidgets.QLabel()
         self.welcome_lb  = QtWidgets.QLabel("Willkomen, Herr Güner.")
-        self.about       = QtWidgets.QLabel("ThyssenKrupp AG©\nVersion 2.1 ~ 28/04/2019\nMade by Ethem Güner")
+        self.about       = QtWidgets.QLabel("ThyssenKrupp AG©\nVersion 2.2 ~ 13/05/2019\nMade by Ethem Güner")
         self.viewLabel   = QtWidgets.QLabel("View of Data")
         self.lastvalue   = QtWidgets.QLabel("\n")
         self.today       = QtWidgets.QLabel()
