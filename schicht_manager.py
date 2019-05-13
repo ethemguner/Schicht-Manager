@@ -22,6 +22,7 @@ class Window(QtWidgets.QWidget):
 
     def setTheme(self):
         self.labelFont = QtGui.QFont("Trebuchet MS", 11, QtGui.QFont.Bold)
+        self.labelFont2 = QtGui.QFont("Trebuchet MS", 12, QtGui.QFont.Bold)
         self.buttonFont = QtGui.QFont("Trebuchet MS", 12, QtGui.QFont.Light)
         self.cbFont = QtGui.QFont("Trebuchet MS", 9, QtGui.QFont.Light)
         self.dateFont = QtGui.QFont("Trebuchet MS", 11, QtGui.QFont.Bold)
@@ -33,8 +34,8 @@ class Window(QtWidgets.QWidget):
         self.value_label.setFont(self.labelFont)
         self.dateLable.setFont(self.dateFont)
         self.months_lb.setFont(self.labelFont)
-        self.ein_rb.setFont(self.labelFont)
-        self.drei_rb.setFont(self.labelFont)
+        self.ein_rb.setFont(self.labelFont2)
+        self.drei_rb.setFont(self.labelFont2)
         self.edit_button.setFont(self.buttonFont)
         self.averages_b.setFont(self.buttonFont)
         self.saveRB.setFont(self.buttonFont)
