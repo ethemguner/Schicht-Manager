@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['schicht_manager.py'],
-             pathex=['C:\\Users\\thepl\\Desktop\\My Python Stuff\\Schicht Manager'],
+             pathex=['C:\\Repo\\Schicht-Manager'],
              binaries=[],
              datas=[],
              hiddenimports=[],
@@ -29,4 +29,4 @@ exe = EXE(pyz,
           strip=False,
           upx=True,
           runtime_tmpdir=None,
-          console=False , icon='C:\\Users\\thepl\\Desktop\\My Python Stuff\\Schicht Manager\\app_logo.ico')
+          console=False , icon='C:\\Repo\\Schicht-Manager\\app_logo.ico')
