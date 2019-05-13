@@ -1,0 +1,2 @@
+# Schicht-Manager
+Thyssenkrupp AG­©
