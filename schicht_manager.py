@@ -451,6 +451,48 @@ class Window(QtWidgets.QWidget):
             self.viewList.clear()
             for i in all_data:
                 self.viewList.addItem(str(i))
+        else:
+
+            database = sqlite3.connect("database2.db")
+            cursor = database.cursor()
+
+            current_month = self.months.currentText()
+            dates  = []
+            values = []
+
+            cursor.execute("SELECT date FROM {} WHERE month = ?".format(shift),[current_month])
+            temp_dates = cursor.fetchall()
+            
+            length = len(temp_dates)
+            for i in range(0, length):
+                date = str(list(temp_dates)[i]).replace("(","").replace("'","").replace(",","").replace(")","") 
+                dates.append(date)
+            
+            cursor.execute("SELECT value FROM {} WHERE month = ?".format(shift),[current_month])
+            temp_values = cursor.fetchall()
+            
+            length = len(temp_values)
+            for i in range(0, length):
+                value = str(list(temp_values)[i]).replace("(","").replace("'","").replace(",","").replace(")","") 
+                values.append(value)
+            
+            all_data = []
+
+            counter = 0
+            length = len(temp_values)
+            for i in range(0, length):
+                item = "{}  |  {}".format(dates[i], values[i])
+                all_data.append(item)
+
+                counter += 1
+                if counter == length:
+                    self.lastvalue.setText("Zu letzt hinzugefügt:\n{}".format(str(item)) )
+                
+                
+
+            self.viewList.clear()
+            for i in all_data:
+                self.viewList.addItem(str(i))
 
     def backupProcess(self):
         now = datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
@@ -520,7 +562,6 @@ class Window(QtWidgets.QWidget):
 
     def setGraph(self):
         try:
-
 
             plt.style.use('seaborn-darkgrid')
 
